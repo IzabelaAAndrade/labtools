@@ -1,0 +1,29 @@
+h1, h2, p{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+#content{
+    margin:5% auto 10% auto;
+    width: 45%;
+}
+
+.pC{
+    margin-top: 5%;
+}
+
+#calculationsAB{
+    color: white;
+    background-color: green;
+    padding: 1%;
+    border-radius: 2%;
+    margin-top: 5%;
+}
+
+#calculationsAB:hover{
+    background-color: yellowgreen;
+}
+
+h2{
+    margin-top: -2%
+}
