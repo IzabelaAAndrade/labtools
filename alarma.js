@@ -11,6 +11,7 @@ let inicialV = 0
 let waterAt = 0
 let calculationsAB = document.querySelector("#calculationsAB")
 let resultsAB = document.querySelector("#resultsAB")
+let divisions = document.querySelector("#nDiv")
 
 function treatmentCalculations(){
     waterAt = 0
@@ -23,8 +24,9 @@ function treatmentCalculations(){
     cv = totalV
     let n = 0
     for(let i=0; i<6; i++){
-        cv = cv/3
+        cv = cv/divisions.value
         finalV += cv
+        console.log(finalV)
         waterAt = totalV-cv
         n = i+1
         volumes = volumes + "<b>Dose "+ n + ": </b>"+ cv.toFixed(2)+ "uL Main Solution + "+waterAt.toFixed(2) +"uL culture medium<br>"
